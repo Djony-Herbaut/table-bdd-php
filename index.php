@@ -1,10 +1,9 @@
 <?php
-	include_once "./include/controllers.inc.php";
+	include_once "./controller.inc.php";
 ?>
-
 <!--head-->
 <!DOCTYPE html>
-<html lang="<?= $_lang[0] ?>">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +15,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    <link rel="stylesheet" href="<?= $_css ?>">
+    <link rel="stylesheet" href="./css/arrow.css">
 </head><body>
     <header>
         <h1>Spécial arrow <i aria-hidden="true" class="arrow-left"></i></h1>
