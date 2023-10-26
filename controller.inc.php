@@ -1,24 +1,25 @@
 <?php 
-    $_topTenLang = array(
+
+
+class Table {
+    static $_topTenLang = array(
         0=>array("Python" => "Web & application"),
         1=>array("C++" => "Application"),
         2=>array("Node js" => "Application"),
         3=>array("PHP" => "Web & application")
     );
-
-class Table {
-    static function afficheTab($table){
-        foreach ($table as $key => $value) {
+    static function afficheTab(){
+        foreach ( Table::$_topTenLang as $key => $value) {
             foreach ($value as $language => $utilitie) {
-                $key++;
-                echo "<tr> ";
-                echo "<td>" . $key. "</td>";
-                echo "<td>" . $language. "</td>";
-                echo "<td>" . $utilitie . "</td>";
-                echo "</tr>";
+               
+                echo "<tr> 
+                <td>". ($key+1)."</td>
+                <td>" . $language. "</td>
+                 <td>" . $utilitie . "</td>
+                 </tr>";
             }
         }
     }
 }
-$unTableau = new Table();
+/* $unTableau = new Table(); */
 ?>

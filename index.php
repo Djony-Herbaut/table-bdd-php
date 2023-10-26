@@ -33,7 +33,7 @@
                 </thead>
                 <!--affichage des données-->
                 <tbody>
-                   <?php $unTableau->afficheTab($_topTenLang); ?>
+                   <?php Table::afficheTab()?>
                 </tbody>
                 <!--partie footer-->
                 <tfoot>
